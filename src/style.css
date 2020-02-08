@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+body {
+  background: rgb(36,123,160);
+  background: linear-gradient(43deg, rgba(36,123,160,1) 0%, rgba(112,193,179,1) 100%); 
+}
+
+.header {
+  color: #fff;
+  font-family: 'Comfortaa', bold;
+}
