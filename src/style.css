@@ -2,7 +2,6 @@
 
 html, body {
   height: 100%;
-  width: 100%;
 }
 
 body {
@@ -26,4 +25,16 @@ body {
 .header {
   color: #fff;
   font-family: 'Comfortaa', bold;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
 }
