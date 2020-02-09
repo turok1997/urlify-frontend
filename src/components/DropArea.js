@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Dropzone from 'dropzone';
-import dropzoneStyle from 'dropzone/dist/dropzone.css';
+import defaultStyle from 'dropzone/dist/dropzone.css';
+import customStyle from '../droparea.css';
 
 const areaId = 'dropArea';
 
