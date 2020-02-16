@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import DropArea from './components/DropArea';
+import Presentation from './components/Presentation';
 import style from "./style.css"
 
 class Index extends Component {
