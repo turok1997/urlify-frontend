@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
+import GoButton from './GoButton';
 
 const Presentation = (props) => {
   return(
-    <div className="container">
-      <div className="row">
-        <div className="col-4"></div>
-      </div>
-      <div className="row">
-        <div className="col-8"></div>
-      </div>
+    <div className='presentation-block'>
+      <h3>Code to access links: {props.presentationId}</h3>
+      <GoButton />
     </div>
   );
 }
