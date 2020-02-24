@@ -18,7 +18,7 @@ class DropArea extends Component {
 
   configureDropzone(callbacks) {
     Dropzone.options[areaId] = {
-      paramName: "file", // The name that will be used to transfer the file
+      paramName: "presentation", // The name that will be used to transfer the file
       maxFilesize: 5, // MB
       init: function() {
         this.on('success', function(response) { callbacks.onSuccess({code: 200, presentationId: 117}) });
