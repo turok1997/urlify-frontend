@@ -30,5 +30,15 @@ module.exports = {
       template: "./index.html",
       filename: "./index.html"
     }),
-  ]
+  ],
+  devServer: {
+    host: '0.0.0.0',
+    hot: true,
+    open: false,
+    compress: true,
+    inline: true,
+    proxy: {
+      '/presentations/*': 'http://localhost:8888'
+    }
+  },
 };
