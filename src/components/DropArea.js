@@ -21,7 +21,11 @@ class DropArea extends Component {
       paramName: "presentation", // The name that will be used to transfer the file
       maxFilesize: 5, // MB
       init: function() {
-        this.on('success', function(response) { callbacks.onSuccess({code: 200, presentationId: 117}) });
+        this.on('success', function(response) {
+          let code = response.xhr.status;
+          let presentationId = JSON.parse(response.xhr.response).presentationId;
+          callbacks.onSuccess({ code, presentationId })
+        });
       },
       url: "/presentations",
     };
